@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Waitlist Form</title>
+  </head>
+  <body>
+    <h1>User Waitlist Form</h1>
+    <form id="userWaitlistForm">
+      <label for="fullName"><strong>Full Name:</strong></label>
+      <input id="fullName" />
+      <br /><br />
+
+      <label for="phoneNumber"><strong>Phone Number:</strong></label>
+      <input type="number" id="phoneNumber" />
+      <br /><br />
+
+      <label for="emailId"><strong>Email Id:</strong></label>
+      <input type="email" id="emailId" />
+      <br /><br />
+
+      <label><strong>Gender:</strong></label>
+      <br />
+      <label for="male">
+        <input type="radio" name="gender" id="male" value="Male" /> Male
+      </label>
+      <br />
+      <label for="female">
+        <input type="radio" name="gender" id="female" value="Female" /> Female
+      </label>
+      <br />
+      <label for="other">
+        <input type="radio" name="gender" id="other" value="Other" /> Other
+      </label>
+      <br /><br />
+
+      <label><strong>Are you a college graduate?:</strong></label>
+      <br />
+      <label for="yes">
+        <input type="radio" name="areGraduate" id="yes" value="Yes" /> Yes
+      </label>
+      <br />
+      <label for="no">
+        <input type="radio" name="areGraduate" id="no" value="No" /> No
+      </label>
+      <br />
+      <label for="dropout">
+        <input type="radio" name="areGraduate" id="dropout" value="Dropout" />
+        Dropout
+      </label>
+      <br /><br />
+
+      <label
+        ><strong
+          >Are you working anywhere full-time or part-time?:</strong
+        ></label
+      >
+      <br />
+      <select id="selectWorkingType">
+        <option value="Working Full Time" selected>Working Full Time</option>
+        <option value="Working Part Time">Working Part Time</option>
+        <option value="Not Working Anywhere">Not Working Anywhere</option>
+      </select>
+      <br /><br />
+
+      <label for="whyLearnDesc"
+        ><strong>Why do you want to learn web development?:</strong></label
+      ><br />
+      <textarea id="whyLearnDesc" rows="5" cols="50"></textarea>
+      <br /><br />
+
+      <label><strong>How did you come to know about us?</strong></label>
+      <br />
+      <label for="youTube">
+        <input type="checkbox" name="howKnow" id="youTube" value="YouTube" />
+        YouTube
+      </label>
+      <br />
+      <label for="instagram">
+        <input
+          type="checkbox"
+          name="howKnow"
+          id="instagram"
+          value="Instagram"
+        />
+        Instagram
+      </label>
+      <br />
+      <label for="linkedIn">
+        <input type="checkbox" name="howKnow" id="linkedIn" value="LinkedIn" />
+        LinkedIn
+      </label>
+      <br />
+      <label for="twitter">
+        <input type="checkbox" name="howKnow" id="twitter" value="Twitter" />
+        Twitter
+      </label>
+      <br />
+      <label for="friendsAndFamily">
+        <input
+          type="checkbox"
+          name="howKnow"
+          id="friendsAndFamily"
+          value="Friends And Family"
+        />
+        Friends And Family
+      </label>
+      <br />
+      <label for="other">
+        <input type="checkbox" name="howKnow" id="other" value="Other" />
+        Other
+      </label>
+      <br /><br />
+
+      <label for="confirmation">
+        <input type="checkbox" name="howKnow" id="confirmation" />
+        <strong
+          >I confirm that all information in this form is factually
+          true.</strong
+        >
+      </label>
+      <br /><br />
+
+      <button type="submit">Submit Details</button>
+    </form>
+    <div id="submittedDetailsDiv"></div>
+  </body>
+</html>
